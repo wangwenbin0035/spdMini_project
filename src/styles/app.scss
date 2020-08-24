@@ -1,0 +1,92 @@
+@import 'custom-theme.scss';
+@import '~taro-ui/dist/style/index.scss';
+page,
+body {
+  font-size:  $font-size-base;
+  height: 100%;
+  background-color: $color-bg-base;
+  color: $color-text-base;
+  box-sizing: border-box;
+}
+
+.areaTitle{
+  font-size: $font-size-lg;
+  padding: 4PX 0 4PX 14PX;
+  position: relative;
+}
+.areaTitle::before{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  width: 4PX;
+  height: 16PX;
+  margin-top: -7PX;
+  background-color: $color-brand;
+  box-shadow: 0 0.14933rem 0.256rem 0 rgba(97,144,232,.2);
+  border-radius: 1PX;
+}
+
+.scrollViewWrapper{
+  padding: 0  $spacing-h-sm;
+  // background-color: rgb(246, 248, 250);
+}
+.primaryColor{
+  color: $color-brand;
+}
+.homePageCard{
+  padding: 5PX 8PX;
+  margin: $spacing-v-sm 0;
+  background-color: #FFF;
+  border-radius: 2PX;
+  .at-row{
+    padding: 2PX 0;
+    font-size: $font-size-sm;
+    .alignRight{
+      text-align: right;
+    }
+  }
+  .at-input{
+    padding: $spacing-h-sm 0;
+    margin-left: 0;
+    font-size: $font-size-sm;
+  }
+  picker {
+    .at-list::after{
+      border-top-width: 0;
+    }
+    .at-list__item{
+      padding: $spacing-h-sm 0;
+      font-size: $font-size-sm;
+      & .item-extra__info{
+        font-size: $font-size-sm;
+      }
+    }
+  }
+  
+  .cardHeader{
+    padding: $spacing-v-sm 0;
+    .cardTitle{
+      font-weight: bold;
+      font-size: $font-size-base;
+    }
+  }
+  .atList{
+
+    .atListTitle{
+      padding: $spacing-v-md;
+      font-weight: bold;
+      font-size: $font-size-base;
+      margin-top: $spacing-v-md;
+    }
+    .at-input{
+      padding: $spacing-v-md;
+      margin-left: 0;
+      font-size: $font-size-base;
+    }
+  }
+}
+.homePageCard:nth-of-type(1){
+  margin: 2PX 0 8PX 0;
+}

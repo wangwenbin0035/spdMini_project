@@ -1,0 +1,28 @@
+.sctionArea{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .title{
+    height: 24PX;
+    padding-left: 16PX;
+    font-size: 14PX;
+    margin: 4px 0;
+    position: relative;
+    &::before{
+      content: "";
+      display: inline-block;
+      position: absolute;
+      left: .512rem;
+      top: 50%;
+      width: 4PX;
+      height: 16PX;
+      margin-top: -10PX;
+      background-color: #238962;
+      box-shadow: 0 0.14933rem 0.256rem 0 rgba(97,144,232,.2);
+      border-radius: 1PX;
+    }
+  }
+  .children{
+    flex: 1 1 auto;
+  }
+}

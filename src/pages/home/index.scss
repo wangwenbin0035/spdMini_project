@@ -1,0 +1,30 @@
+
+@import '../../styles/custom-theme.scss';
+.cardText{
+  font-size: 12PX;
+  margin-top: 4PX;
+  color: '#666'
+}
+
+.myWork{
+  background-color: #ffffff;
+}
+
+.notice{
+  padding: 10PX 0;
+}
+.noticeItems {
+  text-align: center;
+  position: relative;
+}
+.activity {
+  height: 80PX;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.scrollViewWrapper{
+  padding: $spacing-h-sm;
+}

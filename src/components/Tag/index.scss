@@ -1,0 +1,9 @@
+@import '../../styles/custom-theme.scss';
+.tag-container{
+  text-align: center;
+  margin: 0 $spacing-h-sm;
+  border-radius: 2PX;
+  .text{
+    font-size: $font-size-sm;
+  }
+}
