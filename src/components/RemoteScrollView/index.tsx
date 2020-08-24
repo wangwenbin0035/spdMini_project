@@ -274,10 +274,9 @@ class RemoteScrollView extends PureComponent<IProps,IState>{
             loadMore ? (
               <Image className="load-more-icon loading" src={loadingIcon}></Image>
             ) : (
-              // <AtDivider>
-              //   <Image className="load-more-icon" src={doneIcon}></Image>
-              // </AtDivider>
-              <AtDivider content='没有更多了' />
+              refreshStatu === refreshStatus.LOADING 
+              ? null
+              : <AtDivider content='没有更多了' />
             )
           }
         </View>
